@@ -1,9 +1,8 @@
+/* eslint-disable react/prop-types */
 import "./Button.css";
 
-const Button = () => {
-  return (
-    <button className="custom-button">My first custom react button</button>
-  );
+const Button = (props) => {
+  return <button className="custom-button">{props.text}</button>;
 };
 
 export default Button;
