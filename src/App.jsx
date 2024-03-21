@@ -2,6 +2,10 @@ import Button from "./components/Button";
 import "./App.css";
 
 function App() {
+  const onBlurEvent = (e) => {
+    console.log(e.target.value);
+  };
+
   return (
     <div className="container">
       <img
@@ -12,6 +16,7 @@ function App() {
       <h1>Welcome to react!</h1>
       <Button text="first button" />
       <Button text="second button" />
+      <input onBlur={onBlurEvent} />
     </div>
   );
 }
